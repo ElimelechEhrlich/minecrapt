@@ -1,13 +1,120 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
 }
 
-#menu {
-    background-image: url("menu-background.jpg");
+#game-page {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(50, 40px);
+    grid-template-rows: repeat(50, 40px);
+    background-color: rgb(135, 206, 235);
+}
+
+
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+.grass {
+    background-image: url('/images/grass.webp')
+}
+
+.dirt {
+    background-image: url('/images/dirt.webp')
+}
+
+.stone {
+    background-image: url('/images/stone.webp')
+}
+
+.bedrock {
+    background-image: url('/images/bedrock.webp')
+}
+
+.oak-log {
+    background-image: url('/images/oak-log.webp')
+}
+
+.oak-leaves {
+    background-image: url('/images/oak-leaves.webp')
+}
+
+
+#inventory {
+    position: fixed;
+    top: 4rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 1rem;
+    background-position: center center;
+    background-size: cover;
+}
+
+.inventory-div {
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+#pickaxe {
+    background-image: url('/images/pickaxe.webp')
+}
+
+#axe {
+    background-image: url('/images/axe.webp')
+}
+
+#shovel {
+    background-image: url('/images/shovel.webp')
+}
+
+#shears {
+    background-image: url('/images/shears.webp')
+}
+
+#side-menu {
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    background-position: center center;
+    background-size: cover;
+}
+
+.side-button {
+    /* font-size: 1rem; */
+    margin-right: 0.3rem;
+    background-color: rgb(160, 160, 160);
+    color: white;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 2px;
+    border-bottom: 3px solid rgb(112, 112, 112);
+}
+
+.displacement {
+    background-image: none;
+    background-color: rgb(135, 206, 235);
+}
+
+.quantity {
+    transform: translate(1.7rem, 0.1rem);
+    font-size: 1.3rem;
+}
+
+
+/* #menu {
+    background-image: url("menu-background.jpg");
     display: none;
     flex-direction: column;
     align-items: center;
@@ -27,42 +134,30 @@ body {
     font-size: 1.5rem;
     background-color: rgb(160, 160, 160);
     color: white;
-}
+} */
 
-#game-page {
+/* #game-page {
     background-color: rgb(135, 206, 235);
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(40, 1fr);
     grid-template-rows: repeat(30, 1fr);
-}
+} */
 
 
 
-div {
-    display: flex;
-    flex-direction: row;
-    grid-column: 1 / span 40;
-}
 
-.cell {
-    background-size: cover;
-    width: 100%;
-}
-
+/* 
 .oak-log { background-image: url('/oak-log.webp') }
-.oak-leaves { background-image: url('/oak-leaves.webp') }
+.oak-leaves { background-image: url('/oak-leaves.webp') } */
 
-.row11 { background-image: url('grass.webp') }
-#row11 { grid-row: 11 / span 1 }
-.dirt { background-image: url('dirt.webp') }
-#row12 { grid-row: 12 / span 1 }
+/* #row11 { grid-row: 11 / span 1 } */
+/* #row12 { grid-row: 12 / span 1 }
 #row13 { grid-row: 13 / span 1 }
 #row14 { grid-row: 14 / span 1 }
-#row15 { grid-row: 15 / span 1 }
-.stone { background-image: url('stone.webp') }
-#row16 { grid-row: 16 / span 1 }
+#row15 { grid-row: 15 / span 1 } */
+/* #row16 { grid-row: 16 / span 1 }
 #row17 { grid-row: 17 / span 1 }
 #row18 { grid-row: 18 / span 1 }
 #row19 { grid-row: 19 / span 1 }
@@ -74,7 +169,6 @@ div {
 #row25 { grid-row: 25 / span 1 }
 #row26 { grid-row: 26 / span 1 }
 #row27 { grid-row: 27 / span 1 }
-#row28 { grid-row: 28 / span 1 }
-.blocks { background-image: url('bedrock.webp') }
-#row29 { grid-row: 29 / span 1 }
-#row30 { grid-row: 30 / span 1 }
+#row28 { grid-row: 28 / span 1 } */
+/* #row29 { grid-row: 29 / span 1 }
+#row30 { grid-row: 30 / span 1 } */
